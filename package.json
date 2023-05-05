@@ -59,5 +59,8 @@
       "type": "individual",
       "url": "https://paulmillr.com/funding/"
     }
-  ]
+  ],
+  "dependencies": {
+    "react-native-randombytes": "^3.6.1"
+  }
 }

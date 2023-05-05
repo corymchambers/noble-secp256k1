@@ -440,6 +440,8 @@ const etc = {
     hmacSha256Sync: _hmacSync,
     hashToPrivateKey,
     randomBytes: (len) => {
+        const {randomBytes} = require('react-native-randombytes');
+        return Uint8Array.from(randomBytes(len));
         const crypto = cr(); // Can be shimmed in node.js <= 18 to prevent error:
         // import { webcrypto } from 'node:crypto';
         // if (!globalThis.crypto) globalThis.crypto = webcrypto;
